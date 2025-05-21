@@ -154,8 +154,8 @@
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
       filters.addEventListener('click', function() {
-        isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-        this.classList.add('filter-active');
+        isotopeItem.querySelector('.isotope-filters .filter-hackathon').classList.remove('filter-hackathon');
+        this.classList.add('filter-hackathon');
         initIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
