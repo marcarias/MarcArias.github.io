@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Marc Arias</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon_github.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .portfolio-details .swiper-slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/img_perfil.png" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Marc Arias</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="github"><i class="bi bi-github"></i></a>
+      <a href="#" class="email"><i class="bi bi-envelope"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <div class="page-title dark-background" style="position: sticky; top: 0; z-index: 1000; background-color: #040b14; width: 100%;">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <a href="index.html#portfolio" style="margin-right: 15px;">
+          <img src="assets/img/icons/img_back.png" alt="Back to Portfolio" style="width: 35px; height: 35px; cursor: pointer;">
+        </a>
+
+        <div style="position: relative; left: -150px;">
+          <h1 class="mb-2 mb-lg-0">A MATTER OF HEIGHT</h1>
+        </div>
+
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">A MATTER OF HEIGHT</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-8" style="position: relative; top: -25px; left: 5px;">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2><strong>Unveiling the Truth: Resolving Goal-Line Controversies with Computer Vision</strong></h2>
+              <p style="font-style: italic; margin-top: -15px;"><strong>Universitat Politècnica de Catalunya (UPC)</strong></p>
+
+              <img src="assets/img/portfolio/img_barcamadrid.jpg" alt="Descripción de la imagen" style="margin-top: 15px; max-width: 80%; height: auto; border-radius: 10px; margin-left: 70px;">
+              <p style="margin-top: 50px;">
+                In high-stakes football matches, controversial moments like whether a ball crossed the goal line can spark heated debates. Despite the use of cutting-edge technologies like <b>VAR (Video Assistant Referee)</b>, certain plays remain inconclusive due to issues like perspective distortion and occlusions. This project employs <b>advanced computer vision techniques</b> to resolve such a dispute, leveraging <b>homography and 3D reconstruction</b> to determine the exact position of the ball.
+              </p>
+              <p>
+                The first step was to choose suitable images for analysis. Out of several candidate images, <b>four perspectives</b> were selected based on their clarity and visibility of key features, such as the corners of the goal and the ball. Images with distortions or missing critical details were discarded to ensure accuracy.
+              </p>
+              <!-- Slider for images -->
+              <div class="swiper" style="margin-top: 20px;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid1.png" alt="Imagen 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid3.png" alt="Imagen 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid2.png" alt="Imagen 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid4.png" alt="Imagen 4">
+                  </div>
+                </div>
+                <!-- Pagination and navigation buttons -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <p style= "margin-top: 30px;">
+                To ensure consistent tracking of the ball, a red circle was overlaid on its position in each image. Next, the visible corners of the goal were identified, and for obscured areas, <b>projections of visible lines</b> were used to estimate their positions geometrically. This step was crucial for constructing an accurate 3D representation.
+              </p>
+              
+
+              <!-- Third Slider -->
+              <div class="swiper swiper-third" style="margin-top: 0px;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid7.png" alt="Third Slider Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid8.png" alt="Third Slider Image 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid5.png" alt="Third Slider Image 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid6.png" alt="Third Slider Image 2">
+                  </div>
+                </div>
+                <!-- Pagination and navigation buttons -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <p style= "margin-top: 30px;">
+                The core of the analysis involved computing homographies to map 2D image coordinates onto a common goal plane. Using the <b>Direct Linear Transform (DLT)</b> algorithm, homography matrices were derived for each image. These matrices enabled the transformation of the ball's position in the images onto the shared plane, ensuring alignment across perspectives.
+              </p>
+
+              <!-- Second Slider -->
+              <div class="swiper swiper-second" style="margin-top: 0px;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid9.png" alt="Second Slider Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid10.png" alt="Second Slider Image 2">
+                  </div>
+                </div>
+                <!-- Pagination and navigation buttons -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              
+              <p style= "margin-top: 30px;">
+                To identify the plane where the ball was truly located, <b>parallel planes were constructed inward and outward</b> from the goal. 
+              </p>
+
+              <!-- Second Slider -->
+              <div class="swiper swiper-fourth" style="margin-top: 0px;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid11.png" alt="Second Slider Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid12.png" alt="Second Slider Image 2">
+                  </div>
+                </div>
+                <!-- Pagination and navigation buttons -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <p style= "margin-top: 30px;">
+                Iteratively, <b>the plane where the ball’s centers from all images aligned most closely was determined as its actual position</b>. After computing the homography of the ball for each imaginary plane -green/red- on each of the four considered images, the following results have been obtained. 
+              </p>
+
+              <!-- Second Slider -->
+              <div class="swiper swiper-fifth" style="margin-top: 0px;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid14.png" alt="Second Slider Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid15.png" alt="Second Slider Image 2">
+                  </div>
+                </div>
+                <!-- Pagination and navigation buttons -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+
+              <p style= "margin-top: 30px;">
+                In order to determine which of all the new planes is the actual ball plane, the distances between the centre projections have been computed during the iterations. These distance has been computed as the sum ofdistances between all the pair of centers (1-2, 1-3, 1-4, 2-3, 2-4, 3-4) . It has been obtained that the minimum distance between centers is obtained at the <b>21st plane</b>, with a distance sum of 68.84 cm. The homography of the ball in all the perspectives in this plane is the following.
+              </p>
+
+              <!-- Second Slider -->
+              <div class="swiper swiper-sixth" style="margin-top: 0px;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid16.png" alt="Second Slider Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid17.png" alt="Second Slider Image 2">
+                  </div>
+                </div>
+                <!-- Pagination and navigation buttons -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <p style= "margin-top: 30px;">
+                After determining the ball's position, its 3D coordinates were calculated. A <b>simulated 3D scenario</b> was created to visualize the ball's depth and proximity to the goal line. The results revealed that the <b>center of the ball had crossed the goal plane by a margin of 12.5 cm</b>, confirming it was a valid goal.
+              </p>
+
+              <!-- Second Slider -->
+              <div class="swiper swiper-seventh" style="margin-top: 0px;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid18.png" alt="Second Slider Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/img_barcamadrid19.png" alt="Second Slider Image 2">
+                  </div>
+                </div>
+                <!-- Pagination and navigation buttons -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <p style= "margin-top: 30px;">As it can be observed on the image below, which is taken directly from above, perpendicular to the horizontal plane (bird's-eye view), the <b>ball was inside the goal with a margin of 1,31cm</b> (considering the radius of the ball of aprox 11,5cm).</p>
+
+              <img src="assets/img/portfolio/img_barcamadrid20.png" alt="Descripción de la imagen" style="margin-top: 0px; width: 65%; height: auto; border-radius: 0px; position: relative; left: 120px;">
+
+              <p style= "margin-top: 30px;">
+                This project demonstrates the power of computer vision in resolving ambiguous situations in sports. By combining homography and 3D modeling, the analysis provides a transparent and accurate resolution to the controversy using minimal resources, <b>relying solely on the analysis of several 2D images taken simultaneously</b>. The methodology is not only reproducible but also holds significant potential for enhancing current technologies like VAR
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200" style="position: sticky; top: 100px; z-index: 10;">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Name</strong>: A Matter of Height</li>
+                <li><strong>Topic</strong>: Computer Vision</li>
+                <li><strong>Tools</strong>: MATLAB</li>
+                <li><strong>Location</strong>: Barcelona (Spain)</li>
+                <li><strong>Date</strong>: November, 2024</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Swiper Initialization -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>
