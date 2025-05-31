@@ -99,10 +99,10 @@
               <p style="font-style: italic; margin-top: -15px;"><strong>Universitat Politècnica de Catalunya (UPC)</strong></p>
 
               <img src="assets/img/portfolio/img_barcamadrid.jpg" alt="Descripción de la imagen" style="margin-top: 15px; max-width: 80%; height: auto; border-radius: 10px; margin-left: 70px;">
-              <p style="margin-top: 50px;">
+              <p style="text-align: justify; margin-top: 50px;">
                 In high-stakes football matches, controversial moments like whether a ball crossed the goal line can spark heated debates. Despite the use of cutting-edge technologies like <b>VAR (Video Assistant Referee)</b>, certain plays remain inconclusive due to issues like perspective distortion and occlusions. This project employs <b>advanced computer vision techniques</b> to resolve such a dispute, leveraging <b>homography and 3D reconstruction</b> to determine the exact position of the ball.
               </p>
-              <p>
+              <p style="text-align: justify;">
                 The first step was to choose suitable images for analysis. Out of several candidate images, <b>four perspectives</b> were selected based on their clarity and visibility of key features, such as the corners of the goal and the ball. Images with distortions or missing critical details were discarded to ensure accuracy.
               </p>
               <!-- Slider for images -->
@@ -127,7 +127,7 @@
                 <div class="swiper-button-prev"></div>
               </div>
 
-              <p style= "margin-top: 30px;">
+              <p style= "text-align: justify; margin-top: 30px;">
                 To ensure consistent tracking of the ball, a red circle was overlaid on its position in each image. Next, the visible corners of the goal were identified, and for obscured areas, <b>projections of visible lines</b> were used to estimate their positions geometrically. This step was crucial for constructing an accurate 3D representation.
               </p>
               
@@ -154,7 +154,7 @@
                 <div class="swiper-button-prev"></div>
               </div>
 
-              <p style= "margin-top: 30px;">
+              <p style= "text-align: justify; margin-top: 30px;">
                 The core of the analysis involved computing homographies to map 2D image coordinates onto a common goal plane. Using the <b>Direct Linear Transform (DLT)</b> algorithm, homography matrices were derived for each image. These matrices enabled the transformation of the ball's position in the images onto the shared plane, ensuring alignment across perspectives.
               </p>
 
@@ -175,7 +175,7 @@
               </div>
 
               
-              <p style= "margin-top: 30px;">
+              <p style= "text-align: justify; margin-top: 30px;">
                 To identify the plane where the ball was truly located, <b>parallel planes were constructed inward and outward</b> from the goal. 
               </p>
 
@@ -195,7 +195,7 @@
                 <div class="swiper-button-prev"></div>
               </div>
 
-              <p style= "margin-top: 30px;">
+              <p style= "text-align: justify; margin-top: 30px;">
                 Iteratively, <b>the plane where the ball’s centers from all images aligned most closely was determined as its actual position</b>. After computing the homography of the ball for each imaginary plane -green/red- on each of the four considered images, the following results have been obtained. 
               </p>
 
@@ -216,7 +216,7 @@
               </div>
 
 
-              <p style= "margin-top: 30px;">
+              <p style= "text-align: justify; margin-top: 30px;">
                 In order to determine which of all the new planes is the actual ball plane, the distances between the centre projections have been computed during the iterations. These distance has been computed as the sum ofdistances between all the pair of centers (1-2, 1-3, 1-4, 2-3, 2-4, 3-4) . It has been obtained that the minimum distance between centers is obtained at the <b>21st plane</b>, with a distance sum of 68.84 cm. The homography of the ball in all the perspectives in this plane is the following.
               </p>
 
@@ -236,7 +236,7 @@
                 <div class="swiper-button-prev"></div>
               </div>
 
-              <p style= "margin-top: 30px;">
+              <p style= "text-align: justify; margin-top: 30px;">
                 After determining the ball's position, its 3D coordinates were calculated. A <b>simulated 3D scenario</b> was created to visualize the ball's depth and proximity to the goal line. The results revealed that the <b>center of the ball had crossed the goal plane by a margin of 12.5 cm</b>, confirming it was a valid goal.
               </p>
 
@@ -256,15 +256,15 @@
                 <div class="swiper-button-prev"></div>
               </div>
 
-              <p style= "margin-top: 30px;">As it can be observed on the image below, which is taken directly from above, perpendicular to the horizontal plane (bird's-eye view), the <b>ball was inside the goal with a margin of 1,31cm</b> (considering the radius of the ball of aprox 11,5cm).</p>
+              <p style= "text-align: justify; margin-top: 30px;">As it can be observed on the image below, which is taken directly from above, perpendicular to the horizontal plane (bird's-eye view), the <b>ball was inside the goal with a margin of 1,31cm</b> (considering the radius of the ball of aprox 11,5cm).</p>
 
               <img src="assets/img/portfolio/img_barcamadrid20.png" alt="Descripción de la imagen" style="margin-top: 0px; width: 65%; height: auto; border-radius: 0px; position: relative; left: 120px;">
 
-              <p style= "margin-top: 30px;">
+              <p style= "text-align: justify; margin-top: 30px;">
                 This project demonstrates the power of computer vision in resolving ambiguous situations in sports. By combining homography and 3D modeling, the analysis provides a transparent and accurate resolution to the controversy using minimal resources, <b>relying solely on the analysis of several 2D images taken simultaneously</b>. The methodology is not only reproducible but also holds significant potential for enhancing current technologies like VAR
               </p>
 
-              <p style="margin-top: 0px;">
+              <p style="text-align: justify; margin-top: 0px;">
                   You can find the full detailed explanation of the project on <a href="assets/pdf/actv_football.pdf" target="_blank">this PDF</a>.
               </p>
             </div>

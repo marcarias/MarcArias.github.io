@@ -120,32 +120,32 @@
 
                     <!-- Agregar una imagen debajo del texto -->
                     <img src="assets/img/portfolio/img_football1.png" alt="Descripción de la imagen" style="margin-top: 15px; max-width: 100%; height: auto; border-radius: 10px;">
-                    <p style="margin-top: 10px;">
+                    <p style="text-align: justify; margin-top: 10px;">
                         This project focuses on extracting <b>key features from football fields using 2D images</b> captured by the single broadcast camera commonly utilized in televised matches. From this foundation, future stages will aim to accurately <b>localize players on the field</b>, providing the basis for tracking their movements and enabling subsequent gameplay analysis. For the moment, only <b>classical computer vision techniques</b> are considered due to their lower computational complexity, enabling real-time image processing, while the possibility of incorporating AI in the future is not ruled out.
                     </p>
-                    <p style="margin-top: 30px;">
+                    <p style="text-align: justify; margin-top: 30px;">
                         The following image was extracted from the <b>2024 UEFA European Championship.</b>
                     </p>
                     <img src="assets/img/portfolio/img_football2.png" alt="Descripción de la imagen" style="margin-top: 0px; width: 80%; height: auto; border-radius: 0px; position: relative; left: 75px;">
-                    <p style="margin-top: 40px;">
+                    <p style="text-align: justify; margin-top: 40px;">
                         The process begins by focusing on the <b>green regions</b> of the image, typically corresponding to the playing field. Using the HSV (Hue, Saturation, Value) color space, a range of values is defined to isolate green pixels. A mask is then applied to retain only these areas, effectively segmenting the field from other elements.
                     </p>
-                    <p style="margin-top: 0px;">
+                    <p style="text-align: justify; margin-top: 0px;">
                         Once the green areas are isolated, they are converted into a <b>grayscale representation</b>. This simplifies the data by reducing color information, enabling further processing focused on intensity variations.
                     </p>
                     <img src="assets/img/portfolio/img_football6.png" alt="Descripción de la imagen" style="margin-top: 0px; width: 80%; height: auto; border-radius: 0px; position: relative; left: 75px;">
-                    <p style="margin-top: 40px;">
+                    <p style="text-align: justify; margin-top: 40px;">
                         To extract structural details, <b>edge detection</b> is applied using the <b>Sobel operator</b>. This method computes the intensity gradient in both horizontal and vertical directions, highlighting lines and transitions within the segmented green areas.
                     </p>      
-                    <p style="margin-top: 0px;">
+                    <p style="text-align: justify; margin-top: 0px;">
                         After detecting edges, morphological operations such as <b>erosion and dilation</b> are employed. These steps clean up noise and refine the detected lines, ensuring they represent significant features of the field while suppressing minor artifacts.
                     </p>                
                     <img src="assets/img/portfolio/img_football4.png" alt="Descripción de la imagen" style="margin-top: 0px; width: 80%; height: auto; border-radius: 0px; position: relative; left: 75px;">
-                    <p style="margin-top: 40px;">
+                    <p style="text-align: justify; margin-top: 40px;">
                         Finally, the refined edges are processed using the <b>Hough Transform</b> to detect straight lines that correspond to the structural elements of the playing field, such as boundaries and key markings. These detected lines are then overlaid onto the original image and highlighted in green. 
                     </p>                    
                     <img src="assets/img/portfolio/img_football5.png" alt="Descripción de la imagen" style="margin-top: 0px; width: 80%; height: auto; border-radius: 0px; position: relative; left: 75px;">
-                    <p style="margin-top: 40px;">
+                    <p style="text-align: justify; margin-top: 40px;">
                         This visualization provides a clear representation of the geometric layout of the field, emphasizing its essential structural components for further analysis or tracking applications. In the future, this will facilitate the execution of homographies and the transformation of player positions onto a bird’s-eye view plane.
                     </p>                     
                 </div>
